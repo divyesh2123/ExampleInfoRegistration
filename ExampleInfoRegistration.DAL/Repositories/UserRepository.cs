@@ -18,5 +18,11 @@ namespace ExampleInfoRegistration.DAL.Repositories
 
            return _context.SaveChanges() > 0 ? true : false;
         }
+
+        public bool IsEmailAlreadyExisiting(string email)
+        {
+           var isEmailAlreadyExisiting = _context.Users.Any(a=>a.Email == email);
+            return isEmailAlreadyExisiting;
+        }
     }
 }

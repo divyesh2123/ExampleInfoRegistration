@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.30">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.30" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ExampleInfoRegistration.DAL\ExampleInfoRegistration.DAL.csproj" />
     <ProjectReference Include="..\ExampleInfoRegistration.Entities\ExampleInfoRegistration.Entities.csproj" />
   </ItemGroup>
